@@ -7,3 +7,10 @@ export const getUsers = () => {
     }
   });
 };
+
+export const createUser = ({ firstName, lastName }) => {
+  return axios.post('http://rem-rest-api.herokuapp.com/api/users', {
+    firstName,
+    lastName
+  });
+};
