@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMidleware from 'redux-saga';
 import rootSaga from './sagas';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseUrl = 'http://rem-rest-api.herokuapp.com/api';
