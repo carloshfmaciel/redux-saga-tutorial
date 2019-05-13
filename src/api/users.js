@@ -14,3 +14,7 @@ export const createUser = ({ firstName, lastName }) => {
     lastName
   });
 };
+
+export const deleteUser = userId => {
+  return axios.delete(`http://rem-rest-api.herokuapp.com/api/users/${userId}`);
+};
