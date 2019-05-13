@@ -4,6 +4,7 @@
 
 
 **"takeEvery"**
+
 Use this when: You want to watch for EVERY time a specific redux action was dispatched.
 
 Use case: Getting / fetching a list of data from an API.
@@ -75,7 +76,8 @@ function* watchDeleteUserRequest(){
 }
 ```
 
-"put"
+**"put"**
+
 Use this when: You want to dispatch a redux action from within a redux saga.
 
 Use case: Any time you want to update your redux state - usually after a call to an API resolves and you want to update your redux state with the resulting data from the API.
