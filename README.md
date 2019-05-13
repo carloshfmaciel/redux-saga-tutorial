@@ -17,6 +17,7 @@ function* watchGetUsersRequest(){
 ```
 
 **"takeLatest"**
+
 Use this when: There's the potential for a redux action to be dispatched multiple times in a short period and could potentially initiate the running of multiple instances of the same saga - use takeLatest to ONLY take the latest currently running saga for the associated dispatched redux action.
 
 Use cases: Creating or updating a record, or;
@@ -31,6 +32,7 @@ function* watchGetLoggedInUserRequest(){
 ```
 
 **Blocking saga with "take"**
+
 Use this when: You want to watch for a particular redux action to be dispatched, but you don't want to listen for that same dispatched action again until the currently running saga for that action has complete. You're "blocking" the ability to watch for when that particular redux action is dispatched until the currently running saga for that redux action has complete.
 
 Use case: Deleting a user, or;
@@ -48,6 +50,7 @@ function* watchDeleteUserRequest(){
 ```
 
 **"call"**
+
 Use this when: You want to call a function or a promise but want to wait for that function or promise to finish running before executing the next line of code.
 
 Use case: In conjunction with "take" and blocking saga, or;
