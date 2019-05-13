@@ -1,3 +1,7 @@
+**Screen**
+
+![alt text](https://github.com/carloshfmaciel/redux-saga-tutorial/blob/master/screenshot/screen.jpg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
